@@ -42,3 +42,27 @@ console.log(rivers);
 let initialChars = ["A", "B"];
 let chars = [...initialChars, "C", "D"];
 console.log(chars); //
+
+//concatenating arrays
+
+let numbers = [1, 2];
+let moreNumbers = [3, 2];
+let allNumbers = [...numbers, ...moreNumbers];
+console.log(allNumbers); //[1,2,3,2]
+
+let scores = [80, 70, 90];
+let copiedScores = [...scores]; //copy an array instance
+
+console.log(copiedScores); //[80,70,90]   - ... copies array itself not elemenents
+
+//spread operator and strings
+
+let chars2 = ["A", ..."BC", "D"];
+console.log(chars2); //['A','B','C','D','E']
+
+/*
+The spread operator is denoted by three dots (...).
+The spread operator unpacks elements of iterable objects such as arrays, sets, and maps into a list.
+The rest parameter is also denoted by three dots (...). However, it packs the remaining arguments of a function into an array.
+The spread operator can be used to clone an iterable object or merge iterable objects into one.
+*/
