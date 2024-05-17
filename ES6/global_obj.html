@@ -1,0 +1,12 @@
+//javascript var and global object - var adds variable to property list of global object
+//in case of browser - window is the global object
+
+<html>
+  <head>
+    <script>
+      console.log("global object "); var a = 10; console.log(window.a); //10
+      // -because node js doesn't support need to run browser environment let b =
+      20; console.log(window.b); //undefined
+    </script>
+  </head>
+</html>
